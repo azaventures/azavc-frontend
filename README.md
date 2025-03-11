@@ -1,50 +1,126 @@
-# Welcome to your Expo app 👋
+# AzaVC - Venture Capital Portfolio Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+AzaVC is a mobile application designed to help venture capital firms and investors manage their investment portfolios, track deals, and monitor performance metrics.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Portfolio Management**: Track and manage your investment portfolio with detailed analytics
+- **Deal Flow**: Monitor and evaluate potential investment opportunities
+- **Calendar**: Schedule and manage meetings with portfolio companies and potential investments
+- **Wallet**: Track financial transactions and capital allocations
+- **User Authentication**: Secure login and user management
 
+## Tech Stack
+
+- **Framework**: [Expo](https://expo.dev) with [React Native](https://reactnative.dev/)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/) for file-based routing
+- **State Management**: [React Sweet State](https://github.com/atlassian/react-sweet-state) for global state management
+- **UI Components**: Custom components with [React Native Paper](https://reactnativepaper.com/)
+- **Styling**: React Native StyleSheet with a custom theming system
+- **API Client**: Axios for API requests
+
+## Project Structure
+
+```
+azavc/
+├── api/                  # API services and client configuration
+├── app/                  # Main application screens (Expo Router)
+│   ├── (app)/            # Authenticated app screens
+│   │   ├── (tabs)/       # Bottom tab navigation screens
+│   │   └── drawer/       # Drawer navigation screens
+├── assets/               # Static assets like images and fonts
+├── components/           # Reusable UI components
+│   ├── auth/             # Authentication related components
+│   ├── layout/           # Layout components
+│   └── ui/               # UI elements and design system components
+├── store/                # State management
+│   └── sweetState/       # React Sweet State implementation
+├── theme/                # Theme configuration and styles
+├── types/                # TypeScript type definitions
+└── utils/                # Utility functions and helpers
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or later)
+- npm or yarn
+- iOS Simulator or Android Emulator (optional for mobile development)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/azaventures/azavc-frontend.git
+   cd azavc-frontend
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
-    npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on specific platforms:
+   ```bash
+   # For iOS
+   npm run ios
+   
+   # For Android
+   npm run android
+   
+   # For web
+   npm run web
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Development
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Code Style
 
-## Get a fresh project
-
-When you're ready, run:
+This project follows the ESLint and Prettier configuration for consistent code style. Run linting with:
 
 ```bash
-npm run reset-project
+npm run lint
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Testing
 
-## Learn more
+Run tests with:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm test
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Deployment
 
-## Join the community
+### Expo Build
 
-Join our community of developers creating universal apps.
+To create a production build:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm run build:ios     # For iOS
+npm run build:android # For Android
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
+
+## Contact
+
+AzaVC Team - [contact@azaventures.com](mailto:contact@azaventures.com)
+
+Project Link: [https://github.com/azaventures/azavc-frontend](https://github.com/azaventures/azavc-frontend)
