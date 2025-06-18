@@ -43,7 +43,10 @@
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.2",
     "react-sweet-state": "^2.7.2",
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "react-native-paper": "^5.12.3",
+    "react-redux": "^9.1.0",
+    "@reduxjs/toolkit": "^2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
